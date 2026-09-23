@@ -1,0 +1,268 @@
+Create a professional, realistic, logically correct, and easy-to-understand STEP-BY-STEP ALGORITHM for the problem statement:
+
+“10. Employee Leave – Leave Request”
+
+FEATURE SET IV:
+1. Employee Details
+2. Department
+3. Leave Request
+4. Leave Dates
+5. Leave History
+6. Approval Status
+
+Create the algorithm using standard algorithm-writing rules. Do NOT create a flowchart or diagram. Write ONLY the numbered algorithm steps.
+
+ALGORITHM:
+
+1. Start.
+2. Enter Employee ID, Employee Name, Email, and Contact Number.
+3. Verify whether the Employee Details are valid.
+4. If the Employee Details are invalid, display “Invalid Employee Details” and enter the details again.
+5. If valid, identify/select the Employee Department.
+6. Enter the Leave Request details, including Leave Reason.
+7. Enter the Leave Start Date and Leave End Date.
+8. Validate the Leave Dates.
+9. If the Leave Dates are invalid, display “Invalid Leave Dates” and enter the dates again.
+10. Check the Employee’s Leave History for previous leave requests.
+11. Review the current Leave Request with the Leave History.
+12. Validate the complete Leave Request.
+13. If the Leave Request is invalid, display “Invalid Leave Request” and enter the request details again.
+14. If valid, submit the Leave Request.
+15. Set the Approval Status as “Pending”.
+16. Send the Leave Request to the concerned Manager/Authority for approval.
+17. Check the Approval Status.
+18. If the request is Approved, display “Leave Request Approved”.
+19. If the request is Rejected, display “Leave Request Rejected”.
+20. If the request is Pending, display “Leave Request Pending”.
+21. Update the Leave History with the Leave Request and its Approval Status.
+22. Display the Final Leave Request Status.
+23. End.
+
+ALGORITHM RULES:
+
+- Start with “Start” and finish with “End”.
+- Number every step in sequential order.
+- Keep each step clear, simple, and unambiguous.
+- Include all Feature Set IV items:
+  Employee Details, Department, Leave Request, Leave Dates, Leave History, and Approval Status.
+- Use input steps for entering employee and leave information.
+- Use process steps for validation, submission, status setting, and history updating.
+- Use decision conditions for validation and approval status.
+- Clearly handle YES/NO conditions.
+- Invalid employee details must return to employee-details entry.
+- Invalid leave dates must return to leave-date entry.
+- Invalid leave requests must return to leave-request entry.
+- Only a valid leave request should be submitted.
+- Set Approval Status to “Pending” after submission.
+- Handle all three approval outcomes: Approved, Rejected, and Pending.
+- Update Leave History after processing the request.
+- Display the final approval status before ending.
+- Do not skip any step.
+- Do not add unrelated features.
+- Make the algorithm suitable for a BCA/college project and software/database documentation.
+
+
+Flowchart 
+
+Create a professional, realistic, colorful, and logically correct FLOWCHART for the problem statement:
+
+“10. Employee Leave – Leave Request”
+
+FEATURE SET IV:
+1. Employee Details
+2. Department
+3. Leave Request
+4. Leave Dates
+5. Leave History
+6. Approval Status
+
+Create the flowchart using standard flowchart rules and symbols.
+
+FLOWCHART PROCESS:
+
+1. START
+
+2. ENTER EMPLOYEE DETAILS
+   - Employee ID
+   - Employee Name
+   - Email
+   - Contact Number
+
+3. CHECK: ARE EMPLOYEE DETAILS VALID?
+   - YES → Continue
+   - NO → Display “Invalid Employee Details” → Enter Employee Details Again
+
+4. SELECT EMPLOYEE DEPARTMENT
+
+5. ENTER LEAVE REQUEST
+   - Leave Reason
+
+6. ENTER LEAVE DATES
+   - Leave Start Date
+   - Leave End Date
+
+7. CHECK: ARE LEAVE DATES VALID?
+   - YES → Continue
+   - NO → Display “Invalid Leave Dates” → Enter Leave Dates Again
+
+8. CHECK EMPLOYEE LEAVE HISTORY
+   - Previous Leave Requests
+   - Previous Approval Status
+
+9. REVIEW CURRENT LEAVE REQUEST WITH LEAVE HISTORY
+
+10. CHECK: IS LEAVE REQUEST VALID?
+    - YES → Continue
+    - NO → Display “Invalid Leave Request” → Enter Leave Request Again
+
+11. SUBMIT LEAVE REQUEST
+
+12. SET APPROVAL STATUS = “PENDING”
+
+13. SEND LEAVE REQUEST TO MANAGER/AUTHORITY
+
+14. CHECK APPROVAL STATUS
+
+15. IF APPROVED
+    → Display “Leave Request Approved”
+
+16. IF REJECTED
+    → Display “Leave Request Rejected”
+
+17. IF PENDING
+    → Display “Leave Request Pending”
+
+18. UPDATE LEAVE HISTORY
+    - Leave Request
+    - Leave Dates
+    - Approval Status
+
+19. DISPLAY FINAL LEAVE REQUEST STATUS
+
+20. END
+
+STANDARD FLOWCHART RULES:
+
+- Use an OVAL for START and END.
+- Use a PARALLELOGRAM for INPUT and OUTPUT.
+- Use a RECTANGLE for PROCESSING steps.
+- Use a DIAMOND for DECISION/CONDITION steps.
+- Use arrows to show the correct flow direction.
+- Label every decision branch clearly as YES and NO.
+- Create proper loops for invalid Employee Details, Leave Dates, and Leave Request.
+- Keep the flow logically from TOP to BOTTOM.
+- Do not skip any step.
+- Include all six Feature Set IV items.
+- Use short, clear, readable text inside each shape.
+- Use professional icons for employee, department, leave request, calendar, history, and approval.
+- Use different attractive colors for input, process, decision, and output sections.
+- Use a clean white background.
+- Make all arrows clearly visible.
+- Avoid overlapping shapes and crossing arrows as much as possible.
+- Make the final flowchart suitable for a BCA/college project and software documentation.
+- Create a high-resolution, colorful, professional flowchart image.
+- Title at the top:
+  “Employee Leave – Leave Request Flowchart”
+  “Feature Set IV”
+
+
+Entity Relationship Diagram 
+
+Create a professional, realistic, colorful, and database-standard ENTITY RELATIONSHIP DIAGRAM (ERD) for the problem statement:
+
+“10. Employee Leave – Leave Request”
+
+FEATURE SET IV:
+1. Employee Details
+2. Department
+3. Leave Request
+4. Leave Dates
+5. Leave History
+6. Approval Status
+
+Create the ERD using proper Entity-Relationship modeling rules, including:
+- Entities
+- Attributes
+- Primary Keys (PK)
+- Foreign Keys (FK)
+- Relationships
+- Cardinality
+- Proper ERD notation
+
+ENTITIES AND ATTRIBUTES:
+
+1. EMPLOYEE
+- Employee_ID (PK)
+- Employee_Name
+- Email
+- Contact_Number
+- Department_ID (FK)
+
+2. DEPARTMENT
+- Department_ID (PK)
+- Department_Name
+
+3. LEAVE_REQUEST
+- Leave_Request_ID (PK)
+- Employee_ID (FK)
+- Leave_Type
+- Leave_Reason
+- Start_Date
+- End_Date
+- Approval_Status_ID (FK)
+
+4. LEAVE_HISTORY
+- History_ID (PK)
+- Employee_ID (FK)
+- Leave_Request_ID (FK)
+- Start_Date
+- End_Date
+- Leave_Type
+- Approval_Status_ID (FK)
+
+5. APPROVAL_STATUS
+- Approval_Status_ID (PK)
+- Status_Name
+- Status_Date
+- Approved_By
+
+RELATIONSHIPS:
+
+1. DEPARTMENT → EMPLOYEE
+- One Department can have many Employees.
+- One Employee belongs to one Department.
+- Cardinality: 1 : M
+
+2. EMPLOYEE → LEAVE_REQUEST
+- One Employee can submit many Leave Requests.
+- Each Leave Request belongs to one Employee.
+- Cardinality: 1 : M
+
+3. EMPLOYEE → LEAVE_HISTORY
+- One Employee can have many Leave History records.
+- Each Leave History record belongs to one Employee.
+- Cardinality: 1 : M
+
+4. LEAVE_REQUEST → LEAVE_HISTORY
+- A Leave Request can have a corresponding Leave History record.
+- Each Leave History record refers to a Leave Request.
+- Show the relationship clearly.
+
+5. APPROVAL_STATUS → LEAVE_REQUEST
+- One Approval Status can be associated with many Leave Requests.
+- Each Leave Request has one Approval Status.
+- Cardinality: 1 : M
+
+6. APPROVAL_STATUS → LEAVE_HISTORY
+- One Approval Status can be associated with many Leave History records.
+- Each Leave History record has one Approval Status.
+- Cardinality: 1 : M
+
+ERD DESIGN RULES:
+
+- Use rectangles for entities.
+- Use clearly separated attribute sections inside each entity.
+- Mark Primary Keys with “PK”.
+- Mark Foreign Keys with “FK”.
+- Clearly distinguish PK and FK attributes.
+- Show relationships using standard ERD connectors
